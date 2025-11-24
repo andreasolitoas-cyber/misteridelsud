@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Misteri del Sud – Contatti</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style-new.css?v=1.0">
+</head>
+<body>
+  <div class="fog-layer"></div>
+  <div class="shadow-layer"></div>
+
+  <header>
+    <div class="logo">
+      <img src="logo-misteri.png" alt="Logo Misteri del Sud">
+      <span>Misteri del Sud</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="archivio.html">Archivio</a></li>
+        <li><a href="luoghi.html">Luoghi</a></li>
+        <li><a href="indagini.html">Indagini</a></li>
+        <li><a href="chisiamo.html">Chi Siamo</a></li>
+        <li><a href="contatti.html">Contatti</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+<section>
+  <h1>Contatti</h1>
+  <p>
+    Qui puoi ricevere segnalazioni di luoghi, inviti ad eventi, richieste di collaborazione o domande sul progetto.
+  </p>
+
+  <div class="contact-grid">
+    <div>
+      <form>
+        <label for="nome">Nome</label>
+        <input id="nome" type="text" placeholder="Il tuo nome">
+
+        <label for="email" style="margin-top:15px;">Email</label>
+        <input id="email" type="email" placeholder="tua@email.it">
+
+        <label for="messaggio" style="margin-top:15px;">Messaggio</label>
+        <textarea id="messaggio" placeholder="Raccontaci il luogo, l’esperienza o la proposta."></textarea>
+
+        <p style="margin-top:15px;">
+          <small>
+            Questo form è solo grafico. Per ricevere davvero i messaggi puoi usare un form di Netlify,
+            Vercel o un semplice link mailto.
+          </small>
+        </p>
+      </form>
+    </div>
+
+    <aside>
+      <h2>Segnalazioni & Collaborazioni</h2>
+      <p style="margin-top:10px;">
+        Email diretta:
+      </p>
+      <p style="margin-top:6px;">
+        <a href="mailto:tuamail@misteridelsud.it">tuamail@misteridelsud.it</a>
+      </p>
+
+      <p style="margin-top:18px;">
+        Aggiungi qui i link ai tuoi social:
+      </p>
+      <p style="margin-top:6px;">
+        YouTube · Instagram · TikTok · Facebook
+      </p>
+    </aside>
+  </div>
+</section>
+
+  </main>
+
+  <footer>© 2025 Misteri del Sud</footer>
+
+  <audio id="bg-audio" src="audio/misteri-theme.mp3" autoplay loop></audio>
+
+  <!-- Widget IA -->
+  <div class="ai-chat-toggle" onclick="toggleAIChat()">
+    <img src="logo-misteri.png" alt="AI">
+  </div>
+  <div class="ai-chat-panel" id="aiChatPanel">
+    <div class="ai-chat-header">
+      <span>Entità del Portale</span>
+      <small>IA • Risponde in italiano (o nella tua lingua)</small>
+    </div>
+    <div class="ai-chat-messages" id="aiChatMessages">
+      <div class="ai-msg ai-msg-bot">
+        Benvenuto nel Portale Oscuro. Sono l'entità che abita tra queste storie. Chiedimi di un luogo, di un caso o di un segno che hai visto.
+      </div>
+    </div>
+    <div class="ai-chat-input">
+      <input type="text" id="aiChatInput" placeholder="Scrivi qui la tua domanda...">
+      <button type="button" onclick="sendAIMessage()">Invia</button>
+    </div>
+  </div>
+
+  <script src="ai.js"></script>
+</body>
+</html>

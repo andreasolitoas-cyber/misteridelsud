@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Misteri del Sud – Archivio Proibito</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style-new.css?v=1.0">
+</head>
+<body>
+  <div class="fog-layer"></div>
+  <div class="shadow-layer"></div>
+
+  <header>
+    <div class="logo">
+      <img src="logo-misteri.png" alt="Logo Misteri del Sud">
+      <span>Misteri del Sud</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="archivio.html">Archivio</a></li>
+        <li><a href="luoghi.html">Luoghi</a></li>
+        <li><a href="indagini.html">Indagini</a></li>
+        <li><a href="chisiamo.html">Chi Siamo</a></li>
+        <li><a href="contatti.html">Contatti</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+<section>
+  <h1>Archivio Proibito</h1>
+  <p>
+    Organizza qui i tuoi dossier come veri fascicoli investigativi: casi chiusi, casi aperti, segnalazioni anonime,
+    documenti storici, mappe, fotografie, registrazioni audio.
+  </p>
+
+  <div class="grid" style="margin-top:40px;">
+    <article class="card">
+      <div class="card-body">
+        <h3>Dossier 1 – [titolo]</h3>
+        <p>Descrivi il caso, l’origine della leggenda, chi ti ha contattato, prime indagini, materiale raccolto.</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-body">
+        <h3>Dossier 2 – [titolo]</h3>
+        <p>Appunti, cronologia degli eventi, audio EVP, frame video, anomalie termiche, ecc.</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-body">
+        <h3>Dossier 3 – [titolo]</h3>
+        <p>Perfetto per casi complessi con molte fonti, testimoni multipli e luoghi diversi collegati tra loro.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+  </main>
+
+  <footer>© 2025 Misteri del Sud</footer>
+
+  <audio id="bg-audio" src="audio/misteri-theme.mp3" autoplay loop></audio>
+
+  <!-- Widget IA -->
+  <div class="ai-chat-toggle" onclick="toggleAIChat()">
+    <img src="logo-misteri.png" alt="AI">
+  </div>
+  <div class="ai-chat-panel" id="aiChatPanel">
+    <div class="ai-chat-header">
+      <span>Entità del Portale</span>
+      <small>IA • Risponde in italiano (o nella tua lingua)</small>
+    </div>
+    <div class="ai-chat-messages" id="aiChatMessages">
+      <div class="ai-msg ai-msg-bot">
+        Benvenuto nel Portale Oscuro. Sono l'entità che abita tra queste storie. Chiedimi di un luogo, di un caso o di un segno che hai visto.
+      </div>
+    </div>
+    <div class="ai-chat-input">
+      <input type="text" id="aiChatInput" placeholder="Scrivi qui la tua domanda...">
+      <button type="button" onclick="sendAIMessage()">Invia</button>
+    </div>
+  </div>
+
+  <script src="ai.js"></script>
+</body>
+</html>
